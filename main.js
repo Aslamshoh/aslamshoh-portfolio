@@ -20,11 +20,11 @@ function onMQ(mq,fn){ if(mq.addEventListener) mq.addEventListener('change',fn); 
 const T = {
   ru:{
     'nav.about':'Обо мне','nav.services':'Услуги','nav.work':'Проекты','nav.contact':'Контакты',
-    'hero.eyebrow':'Full-stack разработчик','hero.n1':'Аслам','hero.n2':'Шодиев',
+    'hero.eyebrow':'Full-stack разработчик','hero.n1':'Асламшох','hero.n2':'Шодиев',
     'hero.lead':'Делаю сайты, Telegram-ботов и CMS для бизнеса, <em>от идеи до работающего продукта</em>.',
     'hero.cta1':'Смотреть проекты','hero.scroll':'Листайте вниз',
     'about.eyebrow':'Обо мне',
-    'about.text':'Я пишу и фронтенд, и бэкенд сам, поэтому проект не теряется между подрядчиками. Работаю с бизнесом в Таджикистане: архитектурные студии, салоны красоты, таксопарки. Каждому делаю то, что ему реально нужно: сайт, бота, админку или всё сразу.',
+    'about.text':'Я пишу и фронтенд, и бэкенд сам, поэтому проект не теряется между подрядчиками. Работаю с бизнесом : архитектурные студии, салоны красоты, таксопарки. Каждому делаю то, что ему реально нужно: сайт, бота, админку или всё сразу.',
     'about.f1t':'Учёба','about.f1':'УлГТУ, Ульяновск','about.f2t':'Клиенты','about.f2':'Таджикистан и СНГ','about.f3t':'Языки сайтов',
     'svc.title':'Что я делаю','svc.sub':'Четыре направления, в которых у меня есть живые проекты и рабочий код.',
     'svc.1t':'Сайты и лендинги','svc.1d':'Многоязычные сайты с анимациями, адаптивом под телефон и формами заявок.',
@@ -47,11 +47,11 @@ const T = {
   },
   en:{
     'nav.about':'About','nav.services':'Services','nav.work':'Work','nav.contact':'Contact',
-    'hero.eyebrow':'Full-stack developer','hero.n1':'Aslam','hero.n2':'Shodiev',
+    'hero.eyebrow':'Full-stack developer','hero.n1':'Aslamshoh','hero.n2':'Shodiev',
     'hero.lead':'I build websites, Telegram bots and CMS for businesses, <em>from idea to a working product</em>.',
     'hero.cta1':'See the work','hero.scroll':'Scroll down',
     'about.eyebrow':'About',
-    'about.text':'I write both the frontend and the backend myself, so nothing gets lost between contractors. I work with businesses in Tajikistan: architecture studios, beauty salons, taxi fleets. Each gets what it actually needs: a website, a bot, an admin panel or all of them.',
+    'about.text':'I write both the frontend and the backend myself, so nothing gets lost between contractors. I work with businesses : architecture studios, beauty salons, taxi fleets. Each gets what it actually needs: a website, a bot, an admin panel or all of them.',
     'about.f1t':'Studies','about.f1':'UlSTU, Ulyanovsk','about.f2t':'Clients','about.f2':'Tajikistan and CIS','about.f3t':'Site languages',
     'svc.title':'What I do','svc.sub':'Four areas where I have live projects and working code.',
     'svc.1t':'Websites & landings','svc.1d':'Multilingual sites with motion, mobile-first layouts and lead forms.',
