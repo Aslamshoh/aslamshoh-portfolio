@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Аслам Шодиев — full-stack разработчик: сайты, Telegram-боты, CMS и AI-приложения.">
+<title>Aslamshoh Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<canvas id="stage" aria-hidden="true"></canvas>
+<div class="cur" aria-hidden="true"></div><div class="cur-dot" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mono-mark" href="#top" aria-label="Aslamshoh"><i>AS</i><span>Aslamshoh</span></a>
+    <nav class="links" aria-label="Main">
+      <a href="#about" data-i18n="nav.about">Обо мне</a>
+      <a href="#services" data-i18n="nav.services">Услуги</a>
+      <a href="#work" data-i18n="nav.work">Проекты</a>
+      <a href="#contact" data-i18n="nav.contact">Контакты</a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="lang-ru" data-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="theme" id="theme-toggle" aria-label="Тёмная тема">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" data-blob="0.52 0.02 1.15 0.20" data-blob-m="0 0.28 0.75 0.20">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="hero.eyebrow">Full-stack разработчик</div>
+      <h1 aria-label="Aslam Shodiev">
+        <span class="row split" data-i18n="hero.n1">Аслам</span>
+        <span class="row split" data-i18n="hero.n2">Шодиев</span>
+      </h1>
+      <div class="hero-foot">
+        <p class="lead" data-i18n-html="hero.lead">Делаю сайты, Telegram-ботов и CMS для бизнеса, <em>от идеи до работающего продукта</em>.</p>
+        <div class="ctas">
+          <a class="btn solid magnet" href="#work" data-cursor="link"><span data-i18n="hero.cta1">Смотреть проекты</span><span class="arr">↓</span></a>
+          <a class="btn magnet" href="https://github.com/Aslamshokh" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="arr">↗</span></a>
+        </div>
+      </div>
+      <div class="scroll-hint"><span class="track"></span><span data-i18n="hero.scroll">Листайте вниз</span></div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-label="Stack">
+    <div class="track">
+      <span>Python</span><span>FastAPI</span><span>React</span><span>TypeScript</span><span>Next.js</span><span>PHP · MySQL</span><span>PostgreSQL</span><span>python-telegram-bot</span><span>Tailwind</span><span>Kotlin</span>
+      <span aria-hidden="true">Python</span><span aria-hidden="true">FastAPI</span><span aria-hidden="true">React</span><span aria-hidden="true">TypeScript</span><span aria-hidden="true">Next.js</span><span aria-hidden="true">PHP · MySQL</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">python-telegram-bot</span><span aria-hidden="true">Tailwind</span><span aria-hidden="true">Kotlin</span>
+    </div>
+  </div>
+
+  <section id="about" data-blob="-0.62 -0.05 0.75 0.32" data-blob-m="0.35 0.45 0.45 0.3">
+    <div class="wrap about-grid">
+      <div class="eyebrow" data-reveal data-i18n="about.eyebrow">Обо мне</div>
+      <div>
+        <p class="statement" id="statement" data-i18n="about.text">Я пишу и фронтенд, и бэкенд сам, поэтому проект не теряется между подрядчиками. Работаю с бизнесом в Таджикистане: архитектурные студии, салоны красоты, таксопарки. Каждому делаю то, что ему реально нужно: сайт, бота, админку или всё сразу.</p>
+        <dl class="facts" data-reveal>
+          <div class="fact"><dt data-i18n="about.f1t">Учёба</dt><dd data-i18n="about.f1">УлГТУ, Ульяновск</dd></div>
+          <div class="fact"><dt data-i18n="about.f3t">Языки сайтов</dt><dd>RU · EN</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" data-blob="0.7 0.15 0.55 0.24" data-blob-m="0.3 0.55 0.4 0.24">
+    <div class="wrap">
+      <div class="svc-head">
+        <h2 data-reveal data-i18n="svc.title">Что я делаю</h2>
+        <p data-reveal data-i18n="svc.sub">Четыре направления, в которых у меня есть живые проекты и рабочий код.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-row" data-reveal><span class="orb"></span>
+          <h3 data-i18n="svc.1t">Сайты и лендинги</h3>
+          <p data-i18n="svc.1d">Многоязычные сайты с анимациями, адаптивом под телефон и формами заявок.</p>
+          <div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">React</span><span class="tag">Next.js</span></div>
+        </div>
+        <div class="svc-row" data-reveal><span class="orb"></span>
+          <h3 data-i18n="svc.2t">Telegram-боты</h3>
+          <p data-i18n="svc.2d">Запись клиентов, уведомления админу, рассылки, Mini Apps с рейтингом и чатом.</p>
+          <div class="tags"><span class="tag">python-telegram-bot</span><span class="tag">Mini App</span></div>
+        </div>
+        <div class="svc-row" data-reveal><span class="orb"></span>
+          <h3 data-i18n="svc.3t">CMS и админ-панели</h3>
+          <p data-i18n="svc.3d">Админка, где владелец сам меняет тексты, фото, услуги и цены без программиста.</p>
+          <div class="tags"><span class="tag">PHP · MySQL</span><span class="tag">FastAPI</span></div>
+        </div>
+        <div class="svc-row" data-reveal><span class="orb"></span>
+          <h3 data-i18n="svc.4t">AI-приложения</h3>
+          <p data-i18n="svc.4d">Распознавание объектов и текста, AI-переписывание контента, голосовые интерфейсы.</p>
+          <div class="tags"><span class="tag">YOLOv8</span><span class="tag">OpenAI</span><span class="tag">Claude</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" data-blob="0.9 0.75 0.32 0.14" data-blob-m="0.6 0.8 0.25 0.14">
+    <div class="wrap">
+      <div class="eyebrow" data-reveal data-i18n="work.eyebrow">Избранные работы · 2026</div>
+      <h2 style="margin-top:22px" data-reveal data-i18n="work.title">Проекты</h2>
+      <div class="proj-grid">
+
+        <article class="card wide" data-reveal data-tilt>
+          <div class="cover c-mukaab"><div class="l l1"></div><div class="l l2"></div><div class="l l3"><span class="kicker" data-i18n="p.mk.k">Архитектура и дизайн интерьера</span><span class="cube"></span><span class="word">MUKAAB</span></div><div class="glare"></div></div>
+          <div class="card-body">
+            <div class="card-meta"><span data-i18n="p.mk.t">Сайт · CMS · бот</span><span>mukaab.pro</span></div>
+            <h3 data-i18n="p.mk.h">Сайт премиальной студии с админкой и Telegram-ботом</h3>
+            <p data-i18n="p.mk.d">Двуязычный тёмный сайт с отдельными страницами услуг, админ-панель на PHP/MySQL для контента и бот, который передаёт заявки клиентов администратору.</p>
+            <div class="tags"><span class="tag">PHP · MySQL</span><span class="tag">FastAPI</span><span class="tag">RU / EN</span><span class="tag">python-telegram-bot</span></div>
+          </div>
+          <span class="ext" aria-hidden="true">↗</span>
+          <a class="go" href="https://mukaab.pro/" target="_blank" rel="noopener" data-cursor="big" aria-label="MUKAAB — mukaab.pro"></a>
+        </article>
+
+        <article class="card" data-reveal data-tilt>
+          <div class="cover c-eyes"><div class="l l1"></div><div class="l l2"></div><div class="l l3"><span class="kicker" data-i18n="p.ey.k">Ассистент для незрячих</span><span class="word">EYES AI</span></div><div class="glare"></div></div>
+          <div class="card-body">
+            <div class="card-meta"><span>Android · AI</span><span>Kotlin</span></div>
+            <h3 data-i18n="p.ey.h">Камера, которая говорит, что вокруг</h3>
+            <p data-i18n="p.ey.d">Описание сцены, чтение текста, поиск предметов, распознавание купюр и навигация голосом. Локальные модели YOLOv8 и EasyOCR, без платных API.</p>
+            <div class="tags"><span class="tag">Kotlin</span><span class="tag">FastAPI</span><span class="tag">YOLOv8</span></div>
+          </div>
+          <span class="ext" aria-hidden="true">↗</span>
+          <a class="go" href="https://github.com/Aslamshokh/GlazaAI-Android" target="_blank" rel="noopener" data-cursor="big" aria-label="EYES AI — GitHub"></a>
+        </article>
+
+       <!-- <article class="card" data-reveal data-tilt>
+          <div class="cover c-drib"><div class="l l1"></div><div class="l l2"></div><div class="l l3"><span class="kicker">Telegram Mini App</span><span class="elo">ELO 1540 ↑</span><span class="word">Dribbling</span></div><div class="glare"></div></div>
+          <div class="card-body">
+            <div class="card-meta"><span data-i18n="p.dr.t">Футбол · Mini App</span><span>PostgreSQL</span></div>
+            <h3 data-i18n="p.dr.h">Платформа для любительских матчей</h3>
+            <p data-i18n="p.dr.d">Запись на игры, ELO-рейтинг игроков, чат на WebSocket и админка для матчей и рекламы. Авторизация через Telegram.</p>
+            <div class="tags"><span class="tag">FastAPI</span><span class="tag">WebSocket</span><span class="tag">JWT</span></div>
+          </div>
+        </article>-->
+
+        <article class="card" data-reveal data-tilt>
+          <div class="cover c-job"><div class="l l1"></div><div class="l l2"></div><div class="l l3"><span class="kicker" data-i18n="p.jb.k">Душанбе · Худжанд</span><span class="pill" data-i18n="p.jb.p">Вакансии</span><span class="word">JobSite TJ</span></div><div class="glare"></div></div>
+          <div class="card-body">
+            <div class="card-meta"><span data-i18n="p.jb.t">Веб-платформа</span><span>Next.js 14</span></div>
+            <h3 data-i18n="p.jb.h">Поиск работы в Таджикистане</h3>
+            <p data-i18n="p.jb.d">Платформа вакансий с ролями соискателя и работодателя. Слоистая архитектура: роуты, контроллеры, сервисы, репозитории.</p>
+            <div class="tags"><span class="tag">TypeScript</span><span class="tag">Prisma</span><span class="tag">Supabase</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-reveal data-tilt>
+          <!--<div class="cover c-muna"><div class="l l1"></div><div class="l l2"></div><div class="l l3"><span class="kicker" data-i18n="p.mu.k">Салон красоты</span><span class="word">MUNA<br>BEAUTY</span></div><div class="glare"></div></div>
+          <div class="card-body">
+            <div class="card-meta"><span data-i18n="p.mu.t">2 Telegram-бота</span><span>Python</span></div>
+            <h3 data-i18n="p.mu.h">Онлайн-запись и бот для админов</h3>
+            <p data-i18n="p.mu.d">Клиент записывается на услугу, админ получает заявку, утренний отчёт и статистику. Акции, отзывы и напоминания о визите.</p>
+            <div class="tags"><span class="tag">python-telegram-bot</span><span class="tag">async</span></div>
+          </div>
+        </article> -->
+
+        <article class="card" data-reveal data-tilt>
+          <div class="cover c-news"><div class="l l1"></div><div class="l l2"></div><div class="l l3"><span class="kicker">RSS → Telegram</span><span class="feed"><i></i><i></i><i></i><i></i></span><span class="word">News Bot</span></div><div class="glare"></div></div>
+          <div class="card-body">
+            <div class="card-meta"><span data-i18n="p.nw.t">Автопостинг</span><span>Claude · OpenAI</span></div>
+            <h3 data-i18n="p.nw.h">Новостной канал, который ведёт себя сам</h3>
+            <p data-i18n="p.nw.d">Собирает новости из RSS, переписывает и переводит их на русский с помощью AI и публикует по расписанию.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">RSS</span><span class="tag">AI</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-reveal data-tilt>
+          <div class="cover c-taxi"><div class="l l1"></div><div class="l l2"></div><div class="l l3"><span class="kicker" data-i18n="p.tx.k">Финансы таксопарка</span><span class="word">Taxi Park</span></div><div class="glare"></div></div>
+          <div class="card-body">
+            <div class="card-meta"><span data-i18n="p.tx.t">Telegram-бот</span><span>Python</span></div>
+            <h3 data-i18n="p.tx.h">Учёт денег парка в Telegram</h3>
+            <p data-i18n="p.tx.d">Владелец видит доход парка, заработок водителей и комиссии прямо в чате, без таблиц.</p>
+            <div class="tags"><span class="tag">python-telegram-bot</span><span class="tag">finance</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" data-blob="0.45 -0.1 1.0 0.38" data-blob-m="0 0.1 0.8 0.36">
+    <div class="wrap">
+      <div class="eyebrow" data-reveal data-i18n="ct.eyebrow">Контакты</div>
+      <h2 style="margin-top:26px" data-reveal><span data-i18n="ct.l1">Есть идея?</span><br><a id="ct-main" href="https://github.com/Aslamshoh" target="_blank" rel="noopener" data-cursor="link" data-i18n="ct.l2">Давайте соберём.</a></h2>
+      <div class="contact-list" id="contact-list" data-reveal></div>
+      <p class="contact-note" data-reveal data-i18n="ct.note">Пишите о сайте, боте или админке. Отвечу, сколько это займёт и с чего начать.</p>
+    </div>
+  </section>
+</main>
+
+<a class="fab" id="fab" href="#contact" target="_blank" rel="noopener" data-cursor="link" hidden><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 4.2 2.9 11.3c-1.3.5-1.2 1.3-.2 1.6l4.7 1.5 1.8 5.6c.2.7.4.9.9.9.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.5ZM8.6 14l9.2-5.8c.4-.3.8-.1.5.2l-7.6 6.9-.3 3.3L8.6 14Z"/></svg><span data-i18n="ct.fab">Написать</span></a>
+
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
